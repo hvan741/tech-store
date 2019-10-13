@@ -1,10 +1,15 @@
 import React from 'react'
+import Info from '../components/AboutPage/Info'
+import Hero from '../components/Hero'
+import aboutBcg from '../images/aboutBcg.jpeg'
+import Title from '../components/Title'
 
 function AboutPage() {
     return (
-        <div>
-            Hello from About Page
-        </div>
+        <>
+            <Hero img={aboutBcg}/>
+            <Info />
+        </>
     )
 }
 

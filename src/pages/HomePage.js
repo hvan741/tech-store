@@ -1,26 +1,20 @@
 import React from 'react'
-import {ProductConsumer} from '../context'
-import styled from 'styled-components'
-import logo from '../images/logo.svg'
-import {FaBars, FaCartPlus} from 'react-icons/fa'
+import Hero from '../components/Hero'
+import { Link } from 'react-router-dom'
 
 function HomePage() {
     return (
-        <ProductConsumer >
-            {value => {
-                const {cartItems, } = value
-                return (
-                    <div>
-                        Hello from home Page
-                    </div>
-                )
-            }}
-        </ProductConsumer>
+        <>
+            <Hero title='awesome gadgets' max>
+                <Link 
+                to='/products'
+                className='main-link'
+                style={{ marginTop: '2rem' }}>
+                    our products
+              </Link>
+            </Hero>
+        </>
     )
 }
-
-const NavWrapper = styled.nav`
-
-`
 
 export default HomePage
