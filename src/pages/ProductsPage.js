@@ -1,11 +1,15 @@
 import React from 'react'
+import Hero from '../components/Hero'
+import productBcg from '../images/productsBcg.jpeg'
+import Products from '../components/ProductPage/Prodcuts'
 
-function Products() {
+function ProductsPage() {
     return (
-        <div>
-            Hello from Products Page
-        </div>
+        <>
+            <Hero img={productBcg} className='my-5'/>
+            <Products />
+        </>
     )
 }
 
-export default Products
+export default ProductsPage

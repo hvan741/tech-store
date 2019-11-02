@@ -14,7 +14,7 @@ export default function Footer() {
                   <p>Copyrigth &copy; Tech Store {new Date().getFullYear()} all rights resereved</p>
                 </div>
                 <div className="col-md-6 d-flex justify-content-around">
-                  {value.socialIcons.map(item => <a target='_blank' href={item.path} key={item.id}>{item.icon}</a>)}
+                  {value.socialIcons.map(item => <a rel="noopener noreferrer" target='_blank' href={item.path} key={item.id}>{item.icon}</a>)}
                 </div>
               </div>
             </div>

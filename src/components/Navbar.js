@@ -23,10 +23,10 @@ export default function Navbar() {
               </div>
             </div>
           </NavWrapper>
-        );
+        )
       }}
     </ProductConsumer>
-  );
+  )
 }
 
 const NavWrapper = styled.nav`

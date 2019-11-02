@@ -40,3 +40,9 @@ body {
   outline-color: var(--darkGrey);
   color: var(--primaryColor);
 }
+.text-main {
+  color: var(--primaryColor);
+}
+.cart-icon {
+  cursor: pointer;
+}
